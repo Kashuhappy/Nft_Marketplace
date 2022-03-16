@@ -8,11 +8,11 @@ module.exports = {
   // Configure different networks
   networks: {
     hardhat: {
-      chainId: 1337
+      chainId: 1337 //configuration
     },
     mumbai: {
       url: 'https://polygon-mumbai.infura.io/v3/${projectId}',
-      accounts: [privateKey]
+      accounts: [privateKey] //from which we deploy contracts
     },
     mainnet: {
       url: 'https://polygon-mainnet.infura.io/v3/${projectId}',
