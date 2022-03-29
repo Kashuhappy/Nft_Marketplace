@@ -59,7 +59,7 @@ contract NFTMarket is ReentrancyGuard {
             nftContract,
             tokenId,
             payable(msg.sender),
-            payable(address(0)),
+            payable(address(this)),
             price,
             false
         );
@@ -71,7 +71,7 @@ contract NFTMarket is ReentrancyGuard {
             nftContract,
             tokenId,
             msg.sender,
-            address(0),
+            address(this),
             price,
             false
         );
